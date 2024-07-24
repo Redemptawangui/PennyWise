@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#666666"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Categories">
+
+    <!-- Header with time, network, and battery status -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:padding="15dp"/>
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0.1dp"
+        android:layout_gravity="top"
+        android:text="6:30 PM"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Categorize your expenses"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="310dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:background="#090A0B" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                android:src="@drawable/entertainment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entertainment"
+                android:textColor="#000"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="26dp"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="12dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/healthcare"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Healthcare"
+                android:textColor="#000"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="26dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="12dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/shopping"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shopping"
+                android:textColor="#000"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="26dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="12dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/insurance"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insurance"
+                android:textColor="#000"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="26dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="12dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/food"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:textColor="#000"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="26dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="12dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/tax"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tax"
+                android:textColor="#000"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="26dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="12dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/Add"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD NEW CATEGORY"
+                android:textColor="#000"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="26dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SKIP"
+                android:background="?android:attr/selectableItemBackground"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="454dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="OK"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textsize="18dp"/>
+
+
+
+
+
+

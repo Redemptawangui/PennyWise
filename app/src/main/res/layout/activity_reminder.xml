@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#666666"
+    android:padding="10dp"
+    tools:context=".Reminder">
+
+
+    <!-- Icon -->
+
+    <!-- Reminder Text -->
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="91dp"
+        android:layout_height="104dp"
+        android:layout_gravity="start"
+        android:paddingTop="30dp"
+        app:srcCompat="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/reminderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get a reminder to add your expenses?"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:paddingTop="50dp"
+        android:paddingBottom="40dp"
+        android:gravity="center"/>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"/>
+
+    <!-- Show Reminder Notification Text -->
+    <TextView
+        android:id="@+id/showReminderText"
+        android:layout_width="wrap_content"
+        android:layout_height="91dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="40dp"
+        android:text="Show reminder notification"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <!-- Switch -->
+
+    <!-- Info Text -->
+
+
+    <Switch
+        android:id="@+id/reminderSwitch"
+        android:layout_width="67dp"
+        android:layout_height="4dp"
+        android:layout_gravity="end"
+        android:paddingTop="0.1dp"
+        android:paddingVertical="100dp"
+        android:paddingBottom="6dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="2dp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="326dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:text="Turn on reminder to get daily notifications."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Back and Next Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="space between">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="454dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="NEXT"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

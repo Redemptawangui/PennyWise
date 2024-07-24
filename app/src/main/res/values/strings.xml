@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PennyWise</string>
+    <string name="button_text"><![CDATA[<u>Click</u> Me]]></string>
+</resources>

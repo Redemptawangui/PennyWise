@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFEBEE"
+    android:backgroundTint=""
+    android:padding="16dp"
+    tools:context=" .RegisterActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE ACCOUNT"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp"/>
+
+
+
+    <Button
+        android:id="@+id/buttonUsername"
+        android:layout_width="265dp"
+        android:layout_height="49dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="Username"
+        android:padding="10dp"
+        android:text="Username"
+        android:textColor="#080808"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonEmailaddress"
+        android:layout_width="250dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/roundstyle"
+        android:onClick="Emailaddress"
+        android:backgroundTint="#FFFFFF"
+        android:layout_gravity="left"
+        android:padding="10dp"
+        android:text="Email address"
+        android:textColor="#080808"
+        android:textSize="16sp" />
+
+
+
+    <Button
+        android:id="@+id/buttonPaasword"
+        android:layout_width="250dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/roundstyle"
+        android:onClick="Password"
+        android:backgroundTint="#FFFFFF"
+        android:layout_gravity="left"
+        android:padding="10dp"
+        android:text="Password"
+        android:textColor="#080808"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonConfirmPassword"
+        android:layout_width="250dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/roundstyle"
+        android:onClick="ConfirmPassword"
+        android:backgroundTint="#FFFFFF"
+        android:layout_gravity="left"
+        android:padding="10dp"
+        android:text="Confirm Password"
+        android:textColor="#080808"
+        android:textSize="16sp" />
+
+
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="178dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundstyle"
+        android:onClick="Register"
+        android:backgroundTint="#cccc"
+
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Register"
+        android:textColor="#080808"
+        android:textSize="16sp" />
+
+
+    <!-- Get Started Button -->
+
+    <!-- Sign In Link -->
+    <TextView
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have an account? Sign In"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:onClick="signIn"/>
+
+</LinearLayout>

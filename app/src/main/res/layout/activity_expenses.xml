@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#666666"
+    tools:context=".MainActivity">
+
+    <!-- Header with time, network, and battery status -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#FFCCCCCC">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6:30 PM"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/network_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/Connectivity"/>
+
+        <ImageView
+            android:id="@+id/battery_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/network_status"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/battery"/>
+
+    </RelativeLayout>
+
+    <!-- Main content -->
+    <LinearLayout
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFEBEE">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expenses"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily"
+                android:layout_marginLeft="35dp"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly"
+                android:layout_marginLeft="160dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <View
+                android:layout_width="150dp"
+                android:layout_height="6dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="#090A0B" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="65dp"
+            android:background="#FFCCCCCC"
+            android:padding="8dp">
+
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="Saturday 08"
+                android:gravity="center_horizontal"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total expenditure                         SHS 800"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:paddingTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            android:drawableLeft="@drawable/ic_money"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="73dp"
+                    android:layout_height="77dp"
+                    android:src="@drawable/shopping" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Groceries"
+                    android:textColor="#000"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="26dp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHS 400"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginLeft="35dp"
+                    android:textColor="#000"
+                    android:layout_alignParentRight="true"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/fare"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fare"
+                    android:textColor="#000"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="26dp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHS 250"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="26dp"
+                    android:textColor="#000"
+                    android:layout_alignParentRight="true"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/food"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lunch"
+                    android:textColor="#000"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="26dp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHS 150"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="26dp"
+                    android:textColor="#000"
+                    android:layout_alignParentRight="true"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
